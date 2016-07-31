@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>OpenStack自学笔记 &mdash; OpenStack 0.1 文档</title>
+  <title>OpenStack架构设计 &mdash; OpenStack 0.1 文档</title>
   
 
   
@@ -24,17 +24,17 @@
 
   
   
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   
 
   
 
   
-    <link rel="top" title="OpenStack 0.1 文档" href="#"/>
-        <link rel="next" title="在RHEL/CentOS上部署OpenStack" href="install-guide-rdo/index.html"/> 
+    <link rel="top" title="OpenStack 0.1 文档" href="../index.html"/>
+        <link rel="prev" title="OpenStack概述" href="../install-guide-rdo/overview.html"/> 
 
   
-  <script src="_static/js/modernizr.min.js"></script>
+  <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
@@ -49,7 +49,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> OpenStack
+            <a href="../index.html" class="icon icon-home"> OpenStack
           
 
           
@@ -66,7 +66,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -80,9 +80,11 @@
           
             
             
-                <ul>
-<li class="toctree-l1"><a class="reference internal" href="install-guide-rdo/index.html">在RHEL/CentOS上部署OpenStack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="arch-design/index.html">OpenStack架构设计</a></li>
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../install-guide-rdo/index.html">在RHEL/CentOS上部署OpenStack</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">OpenStack架构设计</a><ul class="simple">
+</ul>
+</li>
 </ul>
 
             
@@ -96,7 +98,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="#">OpenStack</a>
+        <a href="../index.html">OpenStack</a>
       </nav>
 
 
@@ -111,13 +113,13 @@
 
 <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="#">Docs</a> &raquo;</li>
+    <li><a href="../index.html">Docs</a> &raquo;</li>
       
-    <li>OpenStack自学笔记</li>
+    <li>OpenStack架构设计</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/index.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/arch-design/index.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -128,13 +130,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="openstack">
-<h1>OpenStack自学笔记<a class="headerlink" href="#openstack" title="永久链接至标题">¶</a></h1>
-<p>Contents:</p>
+<h1>OpenStack架构设计<a class="headerlink" href="#openstack" title="永久链接至标题">¶</a></h1>
+<p>OpenStack系统包含了很多服务组件，既可以安装在一台服务器上运行（例如作为测试环境），也可以将服务分别部署到不同的服务器上组建性能更为强健的集群。</p>
+<p>本手册参考 <a class="reference external" href="http://docs.openstack.org/arch-design/">OpenStack Architecture Design Guide</a> 结合自身实践撰写。</p>
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="install-guide-rdo/index.html">在RHEL/CentOS上部署OpenStack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="arch-design/index.html">OpenStack架构设计</a></li>
-</ul>
 </div>
 </div>
 
@@ -145,8 +144,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="install-guide-rdo/index.html" class="btn btn-neutral float-right" title="在RHEL/CentOS上部署OpenStack" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
+        <a href="../install-guide-rdo/overview.html" class="btn btn-neutral" title="OpenStack概述" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -176,23 +175,23 @@
 
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
+            URL_ROOT:'../',
             VERSION:'0.1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
         };
     </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/translations.js"></script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 
   
   
-    <script type="text/javascript" src="_static/js/theme.js"></script>
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
   
 
   

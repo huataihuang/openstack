@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>OpenStack自学笔记 &mdash; OpenStack 0.1 文档</title>
+  <title>OpenStack 通用架构设计 &mdash; OpenStack 0.1 文档</title>
   
 
   
@@ -24,17 +24,16 @@
 
   
   
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   
 
   
 
   
-    <link rel="top" title="OpenStack 0.1 文档" href="#"/>
-        <link rel="next" title="在RHEL/CentOS上部署OpenStack" href="install-guide-rdo/index.html"/> 
+    <link rel="top" title="OpenStack 0.1 文档" href="../index.html"/> 
 
   
-  <script src="_static/js/modernizr.min.js"></script>
+  <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
@@ -49,7 +48,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> OpenStack
+            <a href="../index.html" class="icon icon-home"> OpenStack
           
 
           
@@ -66,7 +65,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -81,8 +80,8 @@
             
             
                 <ul>
-<li class="toctree-l1"><a class="reference internal" href="install-guide-rdo/index.html">在RHEL/CentOS上部署OpenStack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="arch-design/index.html">OpenStack架构设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install-guide-rdo/index.html">在RHEL/CentOS上部署OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">OpenStack架构设计</a></li>
 </ul>
 
             
@@ -96,7 +95,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="#">OpenStack</a>
+        <a href="../index.html">OpenStack</a>
       </nav>
 
 
@@ -111,13 +110,13 @@
 
 <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="#">Docs</a> &raquo;</li>
+    <li><a href="../index.html">Docs</a> &raquo;</li>
       
-    <li>OpenStack自学笔记</li>
+    <li>OpenStack 通用架构设计</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/index.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/arch-design/generalpurpose.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -128,27 +127,24 @@
            <div itemprop="articleBody">
             
   <div class="section" id="openstack">
-<h1>OpenStack自学笔记<a class="headerlink" href="#openstack" title="永久链接至标题">¶</a></h1>
-<p>Contents:</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="install-guide-rdo/index.html">在RHEL/CentOS上部署OpenStack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="arch-design/index.html">OpenStack架构设计</a></li>
-</ul>
+<span id="generalpurpose"></span><h1>OpenStack 通用架构设计<a class="headerlink" href="#openstack" title="永久链接至标题">¶</a></h1>
+<p>OpenStack通用架构通常是构建云计算的部署起点，这个架构设计平衡了各个组件部署，不针对特定的计算、网络或存储组件。通用架构的云计算可以用来构建私有、公共或者混合云计算。</p>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">通用架构的云计算环境不能适合特目标的云计算部署，只是作为无特定需求的额云计算环境。</p>
 </div>
+<p>使用通用架构的云计算一般适用以下情况：</p>
+<ul class="simple">
+<li>一个简单的数据库</li>
+<li>一个web应用程序运行环境</li>
+<li>一个共享的应用程序部署平台</li>
+</ul>
 </div>
 
 
            </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="install-guide-rdo/index.html" class="btn btn-neutral float-right" title="在RHEL/CentOS上部署OpenStack" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-    </div>
   
 
   <hr/>
@@ -176,23 +172,23 @@
 
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
+            URL_ROOT:'../',
             VERSION:'0.1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
         };
     </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/translations.js"></script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 
   
   
-    <script type="text/javascript" src="_static/js/theme.js"></script>
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
   
 
   

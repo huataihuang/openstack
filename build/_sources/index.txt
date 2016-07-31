@@ -12,6 +12,7 @@ Contents:
    :maxdepth: 1
    
    install-guide-rdo/index.rst
+   arch-design/index.rst
 
 
 
