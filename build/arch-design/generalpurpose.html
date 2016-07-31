@@ -133,12 +133,40 @@
 <p class="first admonition-title">注解</p>
 <p class="last">通用架构的云计算环境不能适合特目标的云计算部署，只是作为无特定需求的额云计算环境。</p>
 </div>
-<p>使用通用架构的云计算一般适用以下情况：</p>
+<p>使用通用架构的云计算一般适用以下情况(设计目标是覆盖80%的使用目标)：</p>
 <ul class="simple">
 <li>一个简单的数据库</li>
 <li>一个web应用程序运行环境</li>
 <li>一个共享的应用程序部署平台</li>
 </ul>
+<div class="section" id="id1">
+<h2>通用架构的技术<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>通用云计算包含以下基础组件：</p>
+<ul class="simple">
+<li>Compute</li>
+<li>Network</li>
+<li>Storage</li>
+</ul>
+<div class="section" id="id2">
+<h3>计算资源设计<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<p>计算资源需要考虑的因素 - 每个hypervisor需要的资源:</p>
+<ul class="simple">
+<li>处理器数量</li>
+<li>内存数量</li>
+<li>存储量</li>
+</ul>
+<p>此外需要决定提供计算资源的是一个资源池还是多个资源池，使用多个资源池的设计可以更好保障应用的较大场景。</p>
+<p>需要注意的是超分配比例（<code class="docutils literal"><span class="pre">overcommit</span> <span class="pre">ratio</span></code>），指可用的虚拟资源和可用的物理资源的比率。这个比率配置是针对CPU和内存的。默认的CPU overcommit比率是``16:1`，默认的memory overcommit比率是``1.5:1``。超分配比率的优化是贯穿整个设计过程的重要工作，并且受到计算节点底层的硬件的影响。</p>
+<p>对于虚拟化，如果处理器支持特定的虚拟化计算功能，例如，硬件辅助虚拟化和内存分页相关的技术（如 EPT shadowing），这些功能可以明显改善虚拟机的性能。</p>
+<p>此外需要考虑的是非hypervisor节点（也称为资源节点）的计算请求，包括控制器，对象存储和块存储节点，以及网络服务。</p>
+<p>处理器核心和超线程的数量决定了在一个资源节点能够运行的worker线程数量。设计决定必须和运行的服务紧密相关，这样可以实现所有服务的平衡架构。</p>
+<p>需要考虑随时按需添加计算资源池的能力，在未来能够通过横向扩展硬件来提升整个云计算的能力。</p>
+</div>
+<div class="section" id="id3">
+<h3>网络资源设计<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<p>OpenStack云计算有多个网络组件，提供了不同的资源访问。</p>
+</div>
+</div>
 </div>
 
 
